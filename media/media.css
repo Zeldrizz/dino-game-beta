@@ -1,0 +1,62 @@
+@media(max-width:960px){
+    .game {
+        width: 600px;
+    }
+    .bird, .bird2, .bird3 {
+        left: 540px;
+    }
+    @keyframes birdMoving {
+        0%{
+            left: 540px;
+        }
+        100%{
+            left: -10px;
+        }
+    }
+    .cactus{
+        left: 570px;
+    }
+    @keyframes cactusMoving{
+        0%{
+            left: 570px;
+        }
+        100%{
+            left: -20px;
+        }
+    }
+}
+@media(max-width: 700px){
+    .game{
+        margin-top: 300px;
+    }
+}
+@media(max-width:565px){
+    .menu__title {
+        font-size: 20px;
+    }
+    .menu__text {
+        font-size: 15px;
+    }
+    .text{
+        font-size: 15px;
+        transform: translateX(-80px);
+    }
+    .menu__content{
+        width: 313px;
+    }
+}
+@media(max-width:360px){
+    .menu__content {
+        width: 320px;
+        text-align: center;
+    }
+    li{
+        list-style: none;
+    }
+}
+@media(max-width:320px){
+    .text {
+        font-size: 15px;
+        transform: translateX(-60px);
+    }
+}

@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;
+}
+
+.menu{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__title{
+    color: #000;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+li{
+    color: grey;
+}
+
+.link{
+    color: lawngreen;
+}
+
+.menu__text{
+    color: grey;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+}
+
+.menu__link{
+    color: lawngreen;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.menu__content{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.text{
+    margin-top: 10px;
+    color: grey;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    transform: translateX(-160px);
+    margin-bottom: 30px;
+}
+    
+
+/* din0-game */
+.dino-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.count{
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 900;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.game{
+    width: 900px;
+    height: 200px;
+    border-bottom: 5px solid grey;
+    margin: auto;
+    margin-top: 400px;
+}
+
+.dino{
+    height: 70px;
+    width: 70px;
+    background: url(img/dino-model.png) 50% 50% / cover;
+    position: relative;
+    top: 130px;
+    left: 30px;
+}
+
+.cactus{
+    width: 40px;
+    height: 60px;
+    background: url(img/cactus-model.png) 50% 50% / cover;
+    position: relative;
+    top: 70px;
+    left: 850px;
+    animation: cactusMoving 2s infinite linear;
+}
+
+@keyframes cactusMoving{
+    0%{
+        left: 850px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+.bird{
+    width: 60px;
+    height: 40px;
+    background: url(img/bird-model.png) 50% 50% / cover;
+    position: relative;
+    left: 850px;
+    top: -150px;
+    animation: birdMoving 3.5s infinite linear;
+}
+
+@keyframes birdMoving{
+    0%{
+        left: 850px;
+    }
+    100%{
+        left: -10px;
+    }
+}
+
+.bird2{
+    width: 60px;
+    height: 40px;
+    background: url(img/bird-model.png) 50% 50% / cover;
+    position: relative;
+    left: 850px;
+    top: -270px;
+    animation: birdMoving 5.5s infinite linear;
+}
+
+.bird3{
+    width: 60px;
+    height: 40px;
+    background: url(img/bird-model.png) 50% 50% / cover;
+    position: relative;
+    left: 850px;
+    top: -350px;
+    animation: birdMoving 2.5s infinite linear;
+}
+
+.jumping{
+    animation: jump 0.7s linear;
+}
+
+@keyframes jump{
+    0%{
+        top: 130px;
+    }
+    10%{
+        top: 90px;
+    }
+    30%{
+        top: 50px;
+    }
+    50%{
+        top: 10px;
+    }
+    80%{
+        top: 50px;
+    }
+    90%{
+        top: 90px;
+    }
+    10%{
+        top: 130px;
+    }
+}
+
+.result{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background: grey;
+    border-radius: 10px;
+    position: relative;
+    top: -475px;
+}
+
+.result__tit{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.result__title{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.amount{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result__btn{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px 10px;
+    border-style: none;
+    border:none;
+    border-radius: 10px;
+    background: #1f2020;
+}
+
+.dop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding-top: 100px;
+}
+
+.bugorficha{
+    color: grey;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.add{
+    color: #1f2020;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 10px;
+}
